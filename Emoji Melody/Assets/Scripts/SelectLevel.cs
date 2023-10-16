@@ -32,7 +32,7 @@ public class SelectLevel : MonoBehaviour
         AnswerSystem.trueAnswers = 0;
         AnswerSystem.answered = false;
         AnswerSystem.buttonTimeOut = true;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
     public void ReturnToStart()
     {

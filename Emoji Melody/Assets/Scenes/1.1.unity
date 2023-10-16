@@ -839,21 +839,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &583562329
-Transform:
+--- !u!224 &583562329
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583562328}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 914.22, y: 161.85999, z: -8392.57}
+  m_LocalPosition: {x: 0, y: 0, z: -8392.57}
   m_LocalScale: {x: 11.132281, y: 11.132281, z: 11.132281}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1373454571}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.96147937, y: 0.6226307}
+  m_AnchorMax: {x: 0.99166864, y: 0.67933524}
+  m_AnchoredPosition: {x: -0.7800293, y: -0.64001465}
+  m_SizeDelta: {x: -52.880005, y: -55.880005}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &583562330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1793,21 +1797,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1423230788
-Transform:
+--- !u!224 &1423230788
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423230787}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 914.22, y: -257.93, z: -8392.57}
+  m_LocalPosition: {x: 0, y: 0, z: -8392.57}
   m_LocalScale: {x: 11.132281, y: 11.132281, z: 11.132281}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1373454571}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.96147937, y: 0.23870456}
+  m_AnchorMax: {x: 0.99166864, y: 0.28529546}
+  m_AnchoredPosition: {x: -0.7800293, y: -1.4299927}
+  m_SizeDelta: {x: -52.880005, y: -45.880005}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1423230789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2377,8 +2385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -4.6600037, y: 0}
-  m_SizeDelta: {x: 10.669998, y: 0}
+  m_AnchoredPosition: {x: -0.91000366, y: 0}
+  m_SizeDelta: {x: 28.67, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1712825660
 CanvasRenderer:

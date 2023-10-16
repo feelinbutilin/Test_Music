@@ -34,7 +34,6 @@ public class AnswerSystem : MonoBehaviour
             {
                 _sourceAudio.Play(currentTrackNumber.ToString());
                 trackIsPlaying = true;
-                Debug.Log("StartPlay");
                 _timeLeft = 1.5f;
             }
             else if (!_audioSource.isPlaying && trackIsPlaying && _timeLeft <= 0)
@@ -43,7 +42,6 @@ public class AnswerSystem : MonoBehaviour
                 {
                     StartCoroutine(SceneLoader());
                     coroutineStarted = true;
-                    Debug.Log("LoadScene");
                 }
             }
             _timeLeft -= Time.fixedDeltaTime;
@@ -72,7 +70,6 @@ public class AnswerSystem : MonoBehaviour
     private IEnumerator SceneLoader()
     {
         yield return new WaitForSeconds(1.5f);
-        Debug.Log("TochnoLoad");
         answered = false;
         trackIsPlaying = false;
         buttonTimeOut = true;
@@ -82,7 +79,7 @@ public class AnswerSystem : MonoBehaviour
             case 1:
                 if (currentTrackNumber > 0 && currentTrackNumber < 20)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(1);
                 }
                 else
                 {
@@ -92,7 +89,7 @@ public class AnswerSystem : MonoBehaviour
             case 2:
                 if (currentTrackNumber > 20 && currentTrackNumber < 40)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(1);
                 }
                 else
                 {
@@ -102,7 +99,7 @@ public class AnswerSystem : MonoBehaviour
             case 3:
                 if (currentTrackNumber > 40 && currentTrackNumber < 60)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(1);
                 }
                 else
                 {
@@ -112,7 +109,7 @@ public class AnswerSystem : MonoBehaviour
             case 4:
                 if (currentTrackNumber > 60 && currentTrackNumber < 80)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(1);
                 }
                 else
                 {
@@ -122,7 +119,7 @@ public class AnswerSystem : MonoBehaviour
             case 5:
                 if (currentTrackNumber > 80 && currentTrackNumber < 100)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(1);
                 }
                 else
                 {
@@ -152,20 +149,3 @@ public class AnswerSystem : MonoBehaviour
         _trueButton.colors = cb;
     }
 }
-/*if (answered)
-{ 
-    if (!_audioSource.isPlaying && !isPlaying && _timeLeft <= 0)
-    {
-        _sourceAudio.Play(currentTrackNumber.ToString());
-        isPlaying = true;
-        Debug.Log("StartPlay");
-        _timeLeft = 4f;
-}
-    else if (!_audioSource.isPlaying && isPlaying && _timeLeft <= 0) 
-    {
-        Invoke("SceneLoader", 1f);
-        Debug.Log("LoadScene");
-        _timeLeft = 4f;
-    }
-    _timeLeft -= Time.deltaTime;
-}*/
