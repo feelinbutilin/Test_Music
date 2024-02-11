@@ -12,8 +12,8 @@ public class Main : MonoBehaviour
     {
         Application.OpenURL("https://yandex.ru/games/developer?name=Duende%20Interactive");
     }
-    public void AboutUs()
+    public void SecondPart()
     {
-        SceneManager.LoadScene("About");
+        Application.OpenURL("https://yandex.ru/games/app/274999?lang=ru");
     }
 }
